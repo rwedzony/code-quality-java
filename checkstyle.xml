@@ -41,7 +41,6 @@
         <module name="PackageDeclaration"/>
 
         <!-- Imports-->
-
         <module name="AvoidStarImport">
             <property name="severity" value="warning"/>
         </module>
@@ -72,7 +71,6 @@
         -->
 
         <!-- Miscellaneous-->
-
         <module name="ArrayTypeStyle"/>
         <module name="CommentsIndentation"/>
         <module name="Indentation">
@@ -82,7 +80,6 @@
         <module name="OuterTypeFilename"/>
 
         <!-- Naming Conventions-->
-
         <module name="AbstractClassName"/>
         <module name="ConstantName">
             <property name="format" value="^log(ger)?$|^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$"/>
@@ -114,7 +111,6 @@
         </module>
 
         <!-- Whitspace-->
-
         <module name="EmptyLineSeparator">
             <property name="allowNoEmptyLineBetweenFields" value="true"/>
         </module>
@@ -133,12 +129,10 @@
 
 
     <!-- Miscellaneous-->
-
     <module name="NewlineAtEndOfFile"/>
     <module name="OrderedProperties"/>
 
     <!-- Size Violations-->
-
     <module name="FileLength">
         <property name="max" value="5000"/>
     </module>
@@ -148,7 +142,6 @@
     </module>
 
     <!-- Whitspace-->
-
     <module name="FileTabCharacter">
         <property name="eachLine" value="true"/>
     </module>
