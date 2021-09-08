@@ -1,26 +1,25 @@
 <!DOCTYPE module PUBLIC
-  "-//Checkstyle//DTD Checkstyle Configuration 1.3//EN"
-  "https://checkstyle.org/dtds/configuration_1_3.dtd">
+        "-//Checkstyle//DTD Checkstyle Configuration 1.3//EN"
+        "https://checkstyle.org/dtds/configuration_1_3.dtd">
 
 <module name="Checker">
-	<property name="charset" value="UTF-8"/>
-	<property name="tabWidth" value="4"/>
+    <property name="charset" value="UTF-8"/>
+    <property name="tabWidth" value="4"/>
     <module name="TreeWalker">
-    
-<!-- Annotations-->
-        
+
+        <!-- Annotations-->
         <module name="AnnotationLocation"/>
         <module name="MissingOverride">
-            <property name="severity" value="warning" />
+            <property name="severity" value="warning"/>
         </module>
-        
-<!-- Block Checks-->
-        
+
+        <!-- Block Checks-->
         <module name="EmptyBlock">
             <property name="option" value="TEXT"/>
             <property name="tokens" value="LITERAL_TRY, LITERAL_FINALLY, LITERAL_IF, LITERAL_ELSE,
                                            LITERAL_SWITCH"/>
         </module>
+
         <module name="LeftCurly">
             <property name="ignoreEnums" value="false"/>
         </module>
@@ -28,63 +27,62 @@
             <property name="tokens" value="LITERAL_IF, LITERAL_ELSE, LITERAL_DO, LITERAL_FOR,
                                            LITERAL_WHILE"/>
         </module>
+
         <module name="RightCurly">
             <property name="tokens" value="LITERAL_TRY, LITERAL_CATCH, LITERAL_FINALLY, LITERAL_IF,
                                            LITERAL_DO"/>
         </module>
-        
-<!-- Class Design-->
 
+        <!-- Class Design-->
         <module name="InnerTypeLast"/>
 
-<!-- Coding-->
-        
+        <!-- Coding-->
         <module name="OneStatementPerLine"/>
         <module name="PackageDeclaration"/>
-        
-<!-- Imports-->
-        
+
+        <!-- Imports-->
+
         <module name="AvoidStarImport">
-            <property name="severity" value="warning" />
+            <property name="severity" value="warning"/>
         </module>
         <module name="UnusedImports"/>
-        
-<!-- Javadoc Comments-->
-<!--
-        <module name="InvalidJavadocPosition"/>
-        <module name="JavadocMethod">
-            <property name="scope" value="public"/>
-            <property name="allowMissingParamTags" value="true"/>
-            <property name="allowMissingReturnTag" value="true"/>
-            <property name="allowedAnnotations" value="Override, Test"/>
-            <property name="tokens" value="METHOD_DEF"/>
-            <property name="validateThrows" value="true"/>
-            <property name="severity" value="warning" />
-        </module>
-        <module name="JavadocMissingWhitespaceAfterAsterisk">
-            <property name="severity" value="warning" />
-        </module>
-        <module name="MissingJavadocMethod">
-            <property name="scope" value="public"/>
-            <property name="allowedAnnotations" value="Override, Test, Deprecated"/>
-            <property name="allowMissingPropertyJavadoc" value="true"/>
-            <property name="tokens" value="METHOD_DEF"/>
-            <property name="severity" value="warning" />
-        </module>
--->
-        
-<!-- Miscellaneous-->
+
+        <!-- Javadoc Comments-->
+        <!--
+                <module name="InvalidJavadocPosition"/>
+                <module name="JavadocMethod">
+                    <property name="scope" value="public"/>
+                    <property name="allowMissingParamTags" value="true"/>
+                    <property name="allowMissingReturnTag" value="true"/>
+                    <property name="allowedAnnotations" value="Override, Test"/>
+                    <property name="tokens" value="METHOD_DEF"/>
+                    <property name="validateThrows" value="true"/>
+                    <property name="severity" value="warning" />
+                </module>
+                <module name="JavadocMissingWhitespaceAfterAsterisk">
+                    <property name="severity" value="warning" />
+                </module>
+                <module name="MissingJavadocMethod">
+                    <property name="scope" value="public"/>
+                    <property name="allowedAnnotations" value="Override, Test, Deprecated"/>
+                    <property name="allowMissingPropertyJavadoc" value="true"/>
+                    <property name="tokens" value="METHOD_DEF"/>
+                    <property name="severity" value="warning" />
+                </module>
+        -->
+
+        <!-- Miscellaneous-->
 
         <module name="ArrayTypeStyle"/>
         <module name="CommentsIndentation"/>
         <module name="Indentation">
-            <property name="forceStrictCondition" value="true" />
-            <property name="severity" value="warning" />
+            <property name="forceStrictCondition" value="true"/>
+            <property name="severity" value="warning"/>
         </module>
         <module name="OuterTypeFilename"/>
 
-<!-- Naming Conventions-->
-        
+        <!-- Naming Conventions-->
+
         <module name="AbstractClassName"/>
         <module name="ConstantName">
             <property name="format" value="^log(ger)?$|^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$"/>
@@ -115,7 +113,7 @@
             <property name="format" value="^[a-z](_?[a-zA-Z0-9]+)*$"/>
         </module>
 
-<!-- Whitspace-->
+        <!-- Whitspace-->
 
         <module name="EmptyLineSeparator">
             <property name="allowNoEmptyLineBetweenFields" value="true"/>
@@ -132,27 +130,26 @@
                                            SL_ASSIGN, BXOR_ASSIGN, BOR_ASSIGN, BAND_ASSIGN"/>
         </module>
     </module>
-    
 
 
-<!-- Miscellaneous-->
-    	
+    <!-- Miscellaneous-->
+
     <module name="NewlineAtEndOfFile"/>
     <module name="OrderedProperties"/>
-    
-<!-- Size Violations-->
-    
+
+    <!-- Size Violations-->
+
     <module name="FileLength">
-  		<property name="max" value="5000"/>
-	</module>
-	<module name="LineLength">
-    	<property name="fileExtensions" value="java"/>
-    	<property name="max" value="120"/>
-  	</module>
-  	
-<!-- Whitspace-->
-  	
-  	<module name="FileTabCharacter">
-    	<property name="eachLine" value="true"/>
-  	</module>
+        <property name="max" value="5000"/>
+    </module>
+    <module name="LineLength">
+        <property name="fileExtensions" value="java"/>
+        <property name="max" value="120"/>
+    </module>
+
+    <!-- Whitspace-->
+
+    <module name="FileTabCharacter">
+        <property name="eachLine" value="true"/>
+    </module>
 </module>
