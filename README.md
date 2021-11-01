@@ -4,3 +4,4 @@ XML code quality rules files used  in my Java-projects. Project contains:
 
 ## TODO
 1. Add PMD code analyzer
+2. Validate checkstyle rules
